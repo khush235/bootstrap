@@ -7,8 +7,20 @@
     background-color: lightgrey;
 }
 #d2{
-    background-color:lightpink;
+    background-color:lightblue;
 }
 #d3{
     background-color: burlywood;
+}
+body{
+    background-color: rgb(99, 117, 155);
+}
+.jumbotronjumbotron-fluid{
+    background-color: lightcoral;
+}
+#d4{
+    background-color: lightpink;
+}
+#d5{
+    background-color: lightpink;
 }

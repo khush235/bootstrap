@@ -11,36 +11,158 @@
   <link rel =   "stylesheet" type = "text/css" href = "grid.css">
 </head>
 <body>
+
+        <div class="jumbotronjumbotron-fluid">
+                <div class="container">
+                  <h1>Bootstrap Tutorial</h1>      
+                  <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+                </div>
+              </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+             
+              <div class = "button container">
+                    
+                  
+                    <button type = "button" id = "b1" class = "btn">Basic</button>            
+                    <script type = "text/javascript" src = "bs.js"></script>     
+                    <button class = "btn btn-primary" onclick="alert('succes')">Primary</button>
+                    <a href="https://www.google.com/" class="btn btn-info" role="button">Link Button</a>
+                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                    <button id="btn_link" class="btn btn-default"> <a href="#"> Continue </a> </button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+                    <button type="button" class="btn btn-light">Light</button>
+                    <button type="button" class="btn btn-link">Link</button>  
+               
+                </div>
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                          <li data-target="#demo" data-slide-to="0" class="active"></li>
+                          <li data-target="#demo" data-slide-to="1"></li>
+                          <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+                      
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="615009.jpg" alt="Los Angeles">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="770676.jpg" alt="Chicago">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="615009.jpg" alt="New York">
+                          </div>
+                        </div>
+                      
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      
+                      </div>
+                        <div class = "container">
+                <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Apple</button>
+                        <button type="button" class="btn btn-primary">Samsung</button>
+                        <button type="button" class="btn btn-primary">Sony</button>
+                        <button type="button" class="btn btn-primary">Apple</button>
+                        <button type="button" class="btn btn-primary">Samsung</button>
+                        <button type="button" class="btn btn-primary">Sony</button>
+                        <button type="button" class="btn btn-primary">Apple</button>
+                        <button type="button" class="btn btn-primary">Samsung</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Sony</button>
+                        <div class ="dropdown-menu">
+                                <a class="dropdown-item" href="#">Tablet</a>
+                                <a class="dropdown-item" href="#">Smartphone</a>
+                        </div>
+                        <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Sony</button>
+                                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                                  <span class="caret"></span>
+                                </button>
+                        <div class ="dropdown-menu">
+                                <a class="dropdown-item" href="#">Tablet</a>
+                                <a class="dropdown-item" href="#">Smartphone</a>
+                        </div>
+                </div>
+                </div>
+            
         <div class="container">
                 <div class="row">
                   <div id = "d1" class="col-sm-4">
-                    <h3 id ="h3">Column 1</h3>
+                    <h1 id ="h3">Column<small>1</small></h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
                   </div>
                   <div id = "d2" class="col-sm-4">
-                        <h3 id ="h3">Column 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        <h1 id ="h3"><mark>Column2</mark></h1>
+                    <p>Lorem ipsum <abbr title="World health organization">WHO</abbr> sit amet, consectetur adipisicing elit...</p>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
                   </div>
                   <div id = "d3" class="col-sm-4">
-                        <h3 id ="h3">Column 3</h3>   
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                        <h1 id ="h3">Column 3</h1>   
+                    
+                        <img class="img-fluid" src="770676.jpg" alt="Chania" width="460" height="345"> 
                   </div>
-                </div>
+                
               </div>
 
               <div class="container">
                     <div class="row">
-                      <div id = "d1" class="col-sm-4">
+                      <div id = "d4" class="col-sm-4">
                         <h3 id ="h3">Column 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                        <p>
+                        <dl>
+                                <dt>Coffee</dt>
+                                <dd>- black hot drink</dd>
+                                <dt>Milk</dt>
+                                <dd>- white cold drink</dd>
+                              </dl>  
+                              </p> 
                       </div>
-                      <div id = "d2" class="col-sm-8">
+                      <div id = "d5" class="col-sm-8">
                             <h3 id ="h3">Column 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        <p>Lorem ipsum dolor sit amet, <code>consectetur</code> adipisicing elit...</p>
                         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
                       </div>
                      
@@ -51,7 +173,7 @@
                           <div id = "d1" class="col-sm-6">
                             <h3 id ="h3">Column 1</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                            <p>Ut enim ad minim veniam, <kbd>ctrl+K</kbd> nostrud exercitation ullamco laboris...</p>
                           </div>
                           <div id = "d2" class="col-sm-6">
                                 <h3 id ="h3">Column 2</h3>
@@ -61,7 +183,109 @@
                          
                         </div>
                       </div>
-                 
+                      
+                      <div class="container">
+                            <h2>Animated Progress Bar</h2>
+                             <div class="progress">
+                              <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:50%"></div>
+                            </div>
+                          </div>
+
+                      
+                        <h3>Alert Box</h3>
+                            <div class="alert alert-danger alert-dismissible fade show">
+                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            <strong>Danger!</strong>This is alertbox indicates danger.!
+                        </div>
+
+                    </div>
+                      <div class ="container">
+                        <h2>Basic Table</h2>
+                        
+                        <table class="table table-dark table-hover table-borderless table-striped">
+                            
+                            <thead>
+                                <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                                    </tr>
+                        </thead>
+                       <tbody>
+                           <tr>
+                               <td>Khushil</td>
+                               <td>Bhavsar</td>
+                               <td>uddessi@gmail.com</td>
+                            </tr>
+                            <tr>
+                                    <td>Umang</td>
+                                    <td>Jethwa</td>
+                                    <td>uddessi@gmail.com</td>
+                                 </tr>
+                                 <tr>
+                                        <td>Darshan</td>
+                                        <td>Shah</td>
+                                        <td>uddessi@gmail.com</td>
+                                     </tr>
+                       </tbody>
+                        </table>
+
+                      </div>
+                      
+                          <div class="container">
+                                <h2>Accordion Example</h2>
+                                <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+                                <div id="accordion">
+                                  <div class="card">
+                                    <div class="card-header">
+                                      <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                        Collapsible Group Item #1
+                                      </a>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                      <div class="card-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="card">
+                                    <div class="card-header">
+                                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                      Collapsible Group Item #2
+                                    </a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                      <div class="card-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="card">
+                                    <div class="card-header">
+                                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                        Collapsible Group Item #3
+                                      </a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                      <div class="card-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="container">
+                                    <h2>Pagination</h2>
+                                    <ul class="pagination justify-content-center">
+        
+                                      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                      <li class="page-item cative"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                  </div>
+                     
 
 </body>
 </html>
